@@ -1,0 +1,571 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+header, section, footer {
+    padding: 20px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2a9d8f;
+    color: white;
+  }
+
+  /* Logo */
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  /* Navigation Options */
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar .nav-links li {
+    margin: 0 10px;
+  }
+
+  .navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+
+  .navbar .nav-links a:hover {
+    color: #f4a261;
+  }
+
+  /* Button */
+  .navbar .cta-button {
+    padding: 10px 20px;
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+
+  .navbar .cta-button:hover {
+    background-color: #f4a261;
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .navbar .nav-links {
+      flex-direction: column;
+    }
+
+    .navbar .nav-links li {
+      margin: 5px 0;
+    }
+  }
+
+
+  /* Banner Section */
+  .banner {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for mobile responsiveness */
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+
+  /* Left Section */
+  .banner .text {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .banner .text h1 {
+    font-size: 2.5rem;
+    color: #2a9d8f;
+    margin-bottom: 10px;
+  }
+
+  .banner .text p {
+    font-size: 1.2rem;
+    color: #264653;
+    margin-bottom: 20px;
+  }
+
+  .banner .text button {
+    padding: 10px 20px;
+    background-color: #e76f51;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .banner .text button:hover {
+    background-color: #f4a261;
+  }
+
+  /* Right Section (Image) */
+  .banner .image {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .banner .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  /* Section Styling */
+  .our-client-section {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+
+  .our-client-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .our-client-section h4 {
+    color: #264653;
+  }
+
+
+  /* Grid for Client Logos */
+  .client-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  /* Logo Styling */
+  .client-logos img {
+    max-width: 100px;
+    height: auto;
+    transition: transform 0.3s;
+  }
+
+  .client-logos img:hover {
+    transform: scale(1.1);
+  }
+
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .client-logos {
+      grid-template-columns: repeat(2, 1fr); /* Two logos per row */
+    }
+  }
+
+  /* Mobile Responsive Styles */
+  @media (max-width: 768px) {
+    .banner {
+      flex-direction: column-reverse; /* Stack text and image for mobile */
+      text-align: center;
+    }
+
+    .banner .text {
+      padding: 10px;
+    }
+
+    .banner .text h1 {
+      font-size: 2rem;
+    }
+
+    .banner .text p {
+      font-size: 1rem;
+    }
+  }
+  /* power of smartcontract */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+  }
+
+  /* Section Styling */
+  .power-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .power-section h2 {
+    font-size: 2rem;
+    color: #2a9d8f;
+    margin-bottom: 20px;
+  }
+
+  .power-points {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+  }
+
+  /* Each Point Card */
+  .power-point {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .power-point img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .power-point h3 {
+    font-size: 1.5rem;
+    color: #264653;
+    margin-bottom: 10px;
+  }
+
+  .power-point p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .power-points {
+      grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    }
+  }
+  /* helping smartcontract */
+  
+   
+  /* foundation of the future */
+  /* General Reset */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+  }
+
+  .smartcontract-future {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+  }
+
+  .smartcontract-future h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color:#2a9d8f
+  }
+
+  .smartcontract-future p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card .text-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(50%);
+    transition: all 0.3s ease;
+  }
+
+  .card:hover .text-overlay {
+    transform: translateY(0);
+    background: #2a9d8f; /* Change background color on hover */
+  }
+
+  .text-overlay h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .text-overlay p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+   
+
+  /* contuct us */
+  /* General Reset */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+  }
+
+
+  /* Section Styling */
+  .contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  /* Left Image Section */
+  .contact-image {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+  }
+
+  .contact-image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  /* Right Form Section */
+  .contact-form {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #555;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  .contact-form textarea {
+    resize: none;
+    height: 100px;
+  }
+
+  .contact-form button {
+    padding: 10px 15px;
+    background-color: #2a9d8f;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact-form button:hover {
+    background-color: #21867a;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-image, .contact-form {
+      max-width: 100%;
+    }
+
+    .contact-image {
+      margin-bottom: 20px;
+    }
+  }
+
+  /* footer */
+
+   /* General Reset */
+   body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+  }
+
+  /* Footer Styling */
+  footer {
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /* Footer Section Styles */
+  .footer-logo {
+    flex: 1;
+    max-width: 25%;
+    margin-bottom: 20px;
+  }
+
+  .footer-logo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .footer-logo p {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+
+  .footer-social {
+    flex: 1;
+    max-width: 25%;
+    margin-bottom: 20px;
+  }
+
+  .footer-social h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .footer-social a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+
+  .footer-social a:hover {
+    color: #2a9d8f;
+  }
+
+  .footer-links {
+    flex: 1;
+    max-width: 25%;
+    margin-bottom: 20px;
+  }
+
+  .footer-links h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .footer-links a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
+
+  .footer-links a:hover {
+    color: #fff;
+  }
+
+  .footer-copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-logo, .footer-social, .footer-links {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .footer-social a {
+      margin-right: 15px;
+    }
+  }
